@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: master # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
   repo: sowdowdow/one-click-hugo-cms
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
