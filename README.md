@@ -1,0 +1,1 @@
+available here : https://sowdowdow.github.io/one-click-hugo-cms/#/
