@@ -1,7 +1,7 @@
 ---
 title: "CoreOS, gRPC et onedrive-backupper"
 tags: [CoreOS, gRPC, docker, onedrive-backupper]
-date: 2023-01-15T17:48:25+01:00
+date: 2023-01-18T18:48:25+01:00
 draft: false
 ShowWordCount: true
 ---
