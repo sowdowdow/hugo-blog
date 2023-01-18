@@ -1,1 +1,1 @@
-available here : https://sowdowdow.github.io/one-click-hugo-cms/#/
+available here : https://sowdowdow.github.io/hugo-blog/
