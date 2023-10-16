@@ -1,5 +1,5 @@
 ---
-title: "Sveltekit & Companie 🧡"
+title: "Sveltekit & compagnie 🧡"
 tags: [svelte, sveltekit, cloudflare, planetscale]
 date: 2023-10-16T17:30:56+02:00
 draft: false
