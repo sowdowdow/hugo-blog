@@ -11,6 +11,7 @@ tags:
 categories: []
 type: default
 slug: back-to-ubuntu
+ShowWordCount: true
 ---
 
 Après maintenant quelques mois consacrés au sport me voilà de nouveau dans la sphère apprentissage.

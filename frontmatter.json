@@ -37,6 +37,25 @@
           "title": "Tags",
           "name": "tags",
           "type": "tags"
+        },
+        {
+          "title": "ShowWordCount",
+          "default": "true"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "ShowWordCount",
+          "name": "ShowWordCount",
+          "type": "boolean"
         }
       ]
     }
