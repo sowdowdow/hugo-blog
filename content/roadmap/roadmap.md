@@ -12,4 +12,4 @@ Une checklist des choses que j'ai à apprendre.
 - [ ] Authentification django
 - [ ] Déploiement avec uvicorn
 - [ ] création image Docker + upload vers hub.docker.com
-- [ ] Svelte + SvelteKit
+- [x] Svelte + SvelteKit

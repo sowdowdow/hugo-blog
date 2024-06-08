@@ -6,7 +6,7 @@ available here : https://www.simondormeau.com/
 winget install Hugo.Hugo.Extended
 git clone git@github.com:sowdowdow/hugo-blog.git
 cd .\hugo-blog\
-git submodule update
+git submodule update themes/PaperMod
 ```
 
 2. run
