@@ -4,7 +4,11 @@ description: ""
 date: 2024-07-07T09:47:22.073Z
 preview: ""
 draft: false
-tags: []
+tags:
+    - open tofu
+    - rclone
+    - rust
+    - activity watch
 undefined: "true"
 categories: []
 type: default
