@@ -7,6 +7,12 @@
       "previewPath": null,
       "fields": [
         {
+          "title": "Type",
+          "name": "type",
+          "type": "string",
+          "default": "post"
+        },
+        {
           "title": "Title",
           "name": "title",
           "type": "string"
@@ -31,21 +37,13 @@
         {
           "title": "Is in draft",
           "name": "draft",
-          "type": "draft"
+          "type": "draft",
+          "default": false
         },
         {
           "title": "Tags",
           "name": "tags",
           "type": "tags"
-        },
-        {
-          "title": "ShowWordCount",
-          "default": "true"
-        },
-        {
-          "title": "categories",
-          "name": "categories",
-          "type": "categories"
         },
         {
           "title": "ShowWordCount",
@@ -60,10 +58,6 @@
   "frontMatter.content.publicFolder": "static",
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
-    {
-      "title": "content",
-      "path": "[[workspace]]/content"
-    },
     {
       "title": "posts",
       "path": "[[workspace]]/content/posts"
