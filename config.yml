@@ -25,16 +25,16 @@ menu:
       name: "Rechercher 🔎"
       url: /search/
       weight: -90
-    - identifier: roadmap
-      name: Roadmap
-      url: /roadmap/roadmap
-      weight: -90
+    # - identifier: roadmap
+    #   name: Roadmap
+    #   url: /roadmap/roadmap
+    #   weight: -90
     - identifier: tags
       name: Tags
       url: /tags/
       weight: -80
     - identifier: about
-      name: About
+      name: À propos
       url: /about/about/
       weight: -70
     - identifier: github

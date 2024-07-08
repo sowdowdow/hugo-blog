@@ -1,5 +1,6 @@
 ---
-title: Rust & Activity Watch
+title: Rust & Activity Watch 🦀
+layout: blog
 description: ""
 date: 2024-07-07T09:47:22.073Z
 preview: ""
@@ -9,10 +10,8 @@ tags:
     - rclone
     - rust
     - activity watch
-undefined: "true"
 categories: []
-type: default
-ShowWordCount: false
+ShowWordCount: true
 ---
 
 Après avoir appris que j'aurais la possibilité de travailler avec du Rust en milieu professionnel, j'ai commencé à me documenter sur le langage.

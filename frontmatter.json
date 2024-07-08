@@ -48,14 +48,10 @@
           "type": "categories"
         },
         {
-          "title": "type",
-          "name": "type",
-          "type": "string"
-        },
-        {
           "title": "ShowWordCount",
           "name": "ShowWordCount",
-          "type": "boolean"
+          "type": "boolean",
+          "default": true
         }
       ]
     }

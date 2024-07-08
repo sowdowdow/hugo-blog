@@ -2,15 +2,11 @@
 title: Back to Ubuntu
 description: ""
 date: 2024-06-08T15:57:59.772Z
-preview: ""
 draft: false
 tags:
     - Atuin
     - Ubuntu
     - Front-matter
-categories: []
-type: default
-slug: back-to-ubuntu
 ShowWordCount: true
 ---
 
