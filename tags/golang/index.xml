@@ -1,12 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Golang on SDRM</title><link>https://blog.sdormeau.com/tags/golang/</link><description>Recent content in Golang on SDRM</description><generator>Hugo -- 0.133.0</generator><language>fr-fr</language><lastBuildDate>Tue, 13 Aug 2024 14:19:54 +0000</lastBuildDate><atom:link href="https://blog.sdormeau.com/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Apprentissage de Golang 🐀 - partie 2</title><link>https://blog.sdormeau.com/posts/2024-08-13-apprentissage-golang-partie-2/</link><pubDate>Tue, 13 Aug 2024 14:19:54 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-13-apprentissage-golang-partie-2/</guid><description>Documentation La liste des librairies standard : https://pkg.go.dev/std
-Variables Elles sont fortement typées et il en existe plusieurs types : bool, string, int, byte, float32, float64 Il existe d&amp;rsquo;autres types comme rune pour l&amp;rsquo;unicode.
-exemple d&amp;rsquo;usage : var age int = 20
-short syntax : nom := 123
-Première lettre en :
-MAJUSCULE -&amp;gt; publique minuscule -&amp;gt; privé Module go mod init &amp;lt;nom.go&amp;gt; go mod tidy ajouter ligne import &amp;lt;nom.go&amp;gt;/&amp;lt;dossier&amp;gt; Contrôle de flux if count := 1; count &amp;gt; 1 { .</description></item><item><title>Apprentissage de Golang 🐀 - partie 3</title><link>https://blog.sdormeau.com/posts/2024-08-21-apprentissage-golang-partie-3/</link><pubDate>Tue, 13 Aug 2024 14:19:54 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-21-apprentissage-golang-partie-3/</guid><description>Conversion de type (casting) exemple :
-var a := int(&amp;#34;2&amp;#34;) fonctions func nom(param1 int, param2 string) string {} La logique publique/privé s&amp;rsquo;applique toujours avec la première lettre en majuscule ou minuscule.
-retour multiples func nom() (int, string) { return 1, &amp;#34;example&amp;#34; } // first var ignored _, text := nom() Array Les tableaux ont une taille fixe
-var nom[5]int // ou bien tableau := [3]string{&amp;#34;bob&amp;#34;, &amp;#34;moran&amp;#34;} Slices Un Slice est un &amp;ldquo;array de taille dynamique&amp;rdquo;</description></item><item><title>Apprentissage de Golang 🐀 - partie 1</title><link>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</link><pubDate>Thu, 08 Aug 2024 14:15:44 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</guid><description>$GOPATH Le $GOPATH est une variable système qui détermine l&amp;rsquo;endroit on sont placé les packages go. Ce même chemin contiendra par convention un dossier 🖿 &amp;lt;mon_nom&amp;gt;.go qui contiendra lui-même les projets.
-Packages On peut créer des dossier dans lesquels on découpe le code en plusieurs fichiers. Chaque fichier contient l&amp;rsquo;en-tête package &amp;lt;nom_du_dossier&amp;gt; le nom_du_dossier est une convention.
-exemple :
-🖿 $GOPATH |--- 🖿 src |---- 🖿 sowdowdow.go | |---- main.go | |---- 🖿 inputs | |---- mouse.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Golang on SDRM</title><link>https://blog.sdormeau.com/tags/golang/</link><description>Recent content in Golang on SDRM</description><generator>Hugo -- 0.138.0</generator><language>fr-fr</language><lastBuildDate>Tue, 13 Aug 2024 14:19:54 +0000</lastBuildDate><atom:link href="https://blog.sdormeau.com/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Apprentissage de Golang 🐀 - partie 2</title><link>https://blog.sdormeau.com/posts/2024-08-13-apprentissage-golang-partie-2/</link><pubDate>Tue, 13 Aug 2024 14:19:54 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-13-apprentissage-golang-partie-2/</guid><description>&lt;h3 id="documentation">Documentation&lt;/h3>
+&lt;p>La liste des librairies standard : &lt;a href="https://pkg.go.dev/std">https://pkg.go.dev/std&lt;/a>&lt;/p>
+&lt;h2 id="variables">Variables&lt;/h2>
+&lt;p>Elles sont &lt;strong>fortement typées&lt;/strong> et il en existe plusieurs types : &lt;code>bool&lt;/code>, &lt;code>string&lt;/code>, &lt;code>int&lt;/code>, &lt;code>byte&lt;/code>, &lt;code>float32&lt;/code>, &lt;code>float64&lt;/code>
+Il existe d&amp;rsquo;autres types comme &lt;code>rune&lt;/code> pour l&amp;rsquo;unicode.&lt;/p>
+&lt;p>exemple d&amp;rsquo;usage : &lt;code>var age int = 20&lt;/code>&lt;/p>
+&lt;blockquote>
+&lt;p>short syntax : &lt;code>nom := 123&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>Première lettre en :&lt;/p>
+&lt;ul>
+&lt;li>MAJUSCULE -&amp;gt; publique&lt;/li>
+&lt;li>minuscule -&amp;gt; privé&lt;/li>
+&lt;/ul>
+&lt;h2 id="module">Module&lt;/h2>
+&lt;ol>
+&lt;li>go mod init &amp;lt;nom.go&amp;gt;&lt;/li>
+&lt;li>go mod tidy&lt;/li>
+&lt;li>ajouter ligne import &lt;code>&amp;lt;nom.go&amp;gt;/&amp;lt;dossier&amp;gt;&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h2 id="contrôle-de-flux">Contrôle de flux&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">count&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; &lt;span style="color:#a6e22e">count&lt;/span> &amp;gt; &lt;span style="color:#ae81ff">1&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>la variable &lt;code>count&lt;/code> ne sera accessible qu&amp;rsquo;entre les guillemets avec cette syntaxe.&lt;/p></description></item><item><title>Apprentissage de Golang 🐀 - partie 3</title><link>https://blog.sdormeau.com/posts/2024-08-21-apprentissage-golang-partie-3/</link><pubDate>Tue, 13 Aug 2024 14:19:54 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-21-apprentissage-golang-partie-3/</guid><description>&lt;h2 id="conversion-de-type-casting">Conversion de type (casting)&lt;/h2>
+&lt;p>exemple :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">a&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> int(&lt;span style="color:#e6db74">&amp;#34;2&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="fonctions">fonctions&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">nom&lt;/span>(&lt;span style="color:#a6e22e">param1&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span>, &lt;span style="color:#a6e22e">param2&lt;/span> &lt;span style="color:#66d9ef">string&lt;/span>) &lt;span style="color:#66d9ef">string&lt;/span> {}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>La logique publique/privé s&amp;rsquo;applique toujours avec la première lettre en majuscule ou minuscule.&lt;/p>
+&lt;h3 id="retour-multiples">retour multiples&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">nom&lt;/span>() (&lt;span style="color:#66d9ef">int&lt;/span>, &lt;span style="color:#66d9ef">string&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;example&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// first var ignored
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#a6e22e">_&lt;/span>, &lt;span style="color:#a6e22e">text&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">nom&lt;/span>()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="array">Array&lt;/h2>
+&lt;p>Les tableaux ont une taille fixe&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">nom&lt;/span>[&lt;span style="color:#ae81ff">5&lt;/span>]&lt;span style="color:#66d9ef">int&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// ou bien
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#a6e22e">tableau&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> [&lt;span style="color:#ae81ff">3&lt;/span>]&lt;span style="color:#66d9ef">string&lt;/span>{&lt;span style="color:#e6db74">&amp;#34;bob&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;moran&amp;#34;&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="slices">Slices&lt;/h2>
+&lt;p>Un Slice est un &amp;ldquo;array de taille dynamique&amp;rdquo;&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">nums&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> make([]&lt;span style="color:#66d9ef">int&lt;/span>, &amp;lt;&lt;span style="color:#a6e22e">taille&lt;/span>&amp;gt;, &amp;lt;&lt;span style="color:#a6e22e">capacité&lt;/span>&amp;gt;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>on double toujours la capacité initiale. Deux fonctions utiles pour vérifier capacité et taille sont : &lt;code>len()&lt;/code> et &lt;code>cap()&lt;/code>&lt;/p></description></item><item><title>Apprentissage de Golang 🐀 - partie 1</title><link>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</link><pubDate>Thu, 08 Aug 2024 14:15:44 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</guid><description>&lt;h2 id="gopath">$GOPATH&lt;/h2>
+&lt;p>Le &lt;code>$GOPATH&lt;/code> est une variable système qui détermine l&amp;rsquo;endroit on sont placé les packages go.
+Ce même chemin contiendra par convention un dossier 🖿 &lt;code>&amp;lt;mon_nom&amp;gt;.go&lt;/code> qui contiendra lui-même les projets.&lt;/p>
+&lt;h2 id="packages">Packages&lt;/h2>
+&lt;p>On peut créer des dossier dans lesquels on découpe le code en plusieurs fichiers.
+Chaque fichier contient l&amp;rsquo;en-tête &lt;code>package &amp;lt;nom_du_dossier&amp;gt;&lt;/code> le &lt;strong>nom_du_dossier&lt;/strong> est une convention.&lt;/p>
+&lt;p>exemple :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>🖿 $GOPATH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|--- 🖿 src
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |---- 🖿 sowdowdow.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- main.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- 🖿 inputs
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- mouse.go &amp;lt;----- première ligne &amp;#34;package inputs&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- keyboard.go &amp;lt;----- première ligne &amp;#34;package inputs&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |---- 🖿 organization.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |---- ...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="import">import&lt;/h2>
+&lt;p>&lt;code>import &amp;quot;&amp;lt;nom&amp;gt;&amp;quot;&lt;/code> permet de récupérer des fonctions, structs&amp;hellip; depuis un autre package (= fichier différent).
+ensuite on peut faire &lt;code>&amp;lt;nom&amp;gt;.Fonction()&lt;/code>&lt;/p></description></item></channel></rss>

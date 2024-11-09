@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>GOPATH on SDRM</title><link>https://blog.sdormeau.com/tags/gopath/</link><description>Recent content in GOPATH on SDRM</description><generator>Hugo -- 0.133.0</generator><language>fr-fr</language><lastBuildDate>Thu, 08 Aug 2024 14:15:44 +0000</lastBuildDate><atom:link href="https://blog.sdormeau.com/tags/gopath/index.xml" rel="self" type="application/rss+xml"/><item><title>Apprentissage de Golang 🐀 - partie 1</title><link>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</link><pubDate>Thu, 08 Aug 2024 14:15:44 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</guid><description>$GOPATH Le $GOPATH est une variable système qui détermine l&amp;rsquo;endroit on sont placé les packages go. Ce même chemin contiendra par convention un dossier 🖿 &amp;lt;mon_nom&amp;gt;.go qui contiendra lui-même les projets.
-Packages On peut créer des dossier dans lesquels on découpe le code en plusieurs fichiers. Chaque fichier contient l&amp;rsquo;en-tête package &amp;lt;nom_du_dossier&amp;gt; le nom_du_dossier est une convention.
-exemple :
-🖿 $GOPATH |--- 🖿 src |---- 🖿 sowdowdow.go | |---- main.go | |---- 🖿 inputs | |---- mouse.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>GOPATH on SDRM</title><link>https://blog.sdormeau.com/tags/gopath/</link><description>Recent content in GOPATH on SDRM</description><generator>Hugo -- 0.138.0</generator><language>fr-fr</language><lastBuildDate>Thu, 08 Aug 2024 14:15:44 +0000</lastBuildDate><atom:link href="https://blog.sdormeau.com/tags/gopath/index.xml" rel="self" type="application/rss+xml"/><item><title>Apprentissage de Golang 🐀 - partie 1</title><link>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</link><pubDate>Thu, 08 Aug 2024 14:15:44 +0000</pubDate><guid>https://blog.sdormeau.com/posts/2024-08-08-apprentissage-golang-partie-1/</guid><description>&lt;h2 id="gopath">$GOPATH&lt;/h2>
+&lt;p>Le &lt;code>$GOPATH&lt;/code> est une variable système qui détermine l&amp;rsquo;endroit on sont placé les packages go.
+Ce même chemin contiendra par convention un dossier 🖿 &lt;code>&amp;lt;mon_nom&amp;gt;.go&lt;/code> qui contiendra lui-même les projets.&lt;/p>
+&lt;h2 id="packages">Packages&lt;/h2>
+&lt;p>On peut créer des dossier dans lesquels on découpe le code en plusieurs fichiers.
+Chaque fichier contient l&amp;rsquo;en-tête &lt;code>package &amp;lt;nom_du_dossier&amp;gt;&lt;/code> le &lt;strong>nom_du_dossier&lt;/strong> est une convention.&lt;/p>
+&lt;p>exemple :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>🖿 $GOPATH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|--- 🖿 src
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |---- 🖿 sowdowdow.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- main.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- 🖿 inputs
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- mouse.go &amp;lt;----- première ligne &amp;#34;package inputs&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | |---- keyboard.go &amp;lt;----- première ligne &amp;#34;package inputs&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |---- 🖿 organization.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |---- ...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="import">import&lt;/h2>
+&lt;p>&lt;code>import &amp;quot;&amp;lt;nom&amp;gt;&amp;quot;&lt;/code> permet de récupérer des fonctions, structs&amp;hellip; depuis un autre package (= fichier différent).
+ensuite on peut faire &lt;code>&amp;lt;nom&amp;gt;.Fonction()&lt;/code>&lt;/p></description></item></channel></rss>
