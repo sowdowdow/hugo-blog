@@ -6,7 +6,7 @@ available here : https://www.simondormeau.com/
 winget install Hugo.Hugo.Extended
 git clone git@github.com:sowdowdow/hugo-blog.git
 cd .\hugo-blog\
-git submodule update --recursive
+git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
 git submodule update --remote --merge
 ```
 
